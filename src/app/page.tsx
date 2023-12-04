@@ -28,7 +28,7 @@ export default function Home() {
 			{/* Hero section */}
 			<div className='relative min-h-[calc(100vh-100px)] w-full bg-light'>
 				<div className='absolute right-[50px] top-[50px] rounded-xl bg-dark px-3 py-1 text-center text-white md:-left-7 md:top-0 md:hidden md:px-5 md:py-2'>
-					<h1 className='font-extrabold mb-[-10px] text-[30px] md:text-[40px]'>
+					<h1 className='mb-[-10px] text-[30px] font-extrabold md:text-[40px]'>
 						6k
 					</h1>
 					<p className='text-[12px] text-gray-500'>Clients</p>
