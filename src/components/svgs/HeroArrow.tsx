@@ -3,7 +3,7 @@ const HeroArrow = () => {
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
 			width='131'
-			height='60'
+			height='75'
 			viewBox='0 0 131 95'
 			fill='none'
 		>
