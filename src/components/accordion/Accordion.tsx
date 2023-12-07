@@ -1,12 +1,13 @@
-'use client'
+'use client';
 
-import { useState } from "react";
-import { GoPlus } from "react-icons/go";
+import { useState } from 'react';
+import { GoPlus } from 'react-icons/go';
 import { LiaTimesSolid } from 'react-icons/lia';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface FAQProps {
-  question: string;
-  answer: string;
+	question: string;
+	answer: string;
 }
 
 const Accordion = ({ question, answer }: FAQProps) => {
@@ -17,22 +18,41 @@ const Accordion = ({ question, answer }: FAQProps) => {
 	};
 
 	return (
-		<div
+		<motion.div
 			className={`border-2 ${
 				isOpen ? 'border-purple-500 ' : ''
-			} rounded-lg w-full lg:w-[calc(50%-20px)]`}
+			} w-full rounded-lg `}
 		>
-			<div className='flex flex-col gap-[15px] p-3 '>
-				<div className='flex items-center justify-between'>
-					<p className=''>{question}</p>
-					<button onClick={handleClick} className='text-[16px] font-semibold'>
-						{isOpen ? <LiaTimesSolid /> : <GoPlus />}
-					</button>
-				</div>
-				{isOpen && <p className='text-[14px] text-gray-500 transition-all md:duration-1000 ease-in-out'>{answer}</p>}
-			</div>
-		</div>
+			<AnimatePresence>
+				<motion.div
+					onClick={handleClick}
+					className='flex cursor-pointer flex-col gap-[15px] p-3'
+				>
+					<motion.div className='flex items-center justify-between'>
+						<p className=''>{question}</p>
+						<button className='text-[16px] font-semibold'>
+							{isOpen ? <LiaTimesSolid /> : <GoPlus />}
+						</button>
+					</motion.div>
+					{isOpen && (
+						<motion.p
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1,
+								transition: {
+									duration: 0.5,
+								},
+							}}
+							exit={{ opacity: 0 }}
+							className='text-[14px] text-gray-500 '
+						>
+							{answer}
+						</motion.p>
+					)}
+				</motion.div>
+			</AnimatePresence>
+		</motion.div>
 	);
 };
 
-export default Accordion
+export default Accordion;

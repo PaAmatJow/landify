@@ -31,6 +31,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+	const faqOne = FAQ.slice(0,3)
+	const faqTwo = FAQ.slice(3)
 	return (
 		<main className='overflow-hidden'>
 			{/* Hero section */}
@@ -95,7 +97,7 @@ export default function Home() {
 							<div className='absolute -right-8 top-[57%] rounded-xl bg-white px-5 py-1.5 text-center text-dark z-20'>
 								<h1 className='mb-[-10px] text-[40px] font-bold'>40%</h1>
 								<p className='text-[14px] text-gray-500'>Market</p>
-								<div className="absolute top-[-40px] right-[-50px] z-20">
+								<div className='absolute top-[-40px] right-[-50px] z-20'>
 									<TrianglePink />
 								</div>
 							</div>
@@ -114,7 +116,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="absolute top-[0] left-[5px]">
+					<div className='absolute top-[0] left-[5px]'>
 						<TriangleLine />
 					</div>
 				</div>
@@ -266,11 +268,24 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className='flex flex-wrap gap-x-[20px] gap-y-[10px]'>
-						{FAQ.map((quest) => {
-							const { id, question, answer } = quest;
-							return <Accordion key={id} question={question} answer={answer} />;
-						})}
+					<div className='flex flex-col gap-y-[10px] lg:gap-y-0 lg:flex-row gap-x-[20px]'>
+						<div className='flex flex-col gap-[10px] w-full'>
+							{faqOne.map((quest) => {
+								const { id, question, answer } = quest;
+								return (
+									<Accordion key={id} question={question} answer={answer} />
+								);
+							})}
+						</div>
+
+						<div className='flex flex-col gap-[10px] w-full '>
+							{faqTwo.map((quest) => {
+								const { id, question, answer } = quest;
+								return (
+									<Accordion key={id} question={question} answer={answer} />
+								);
+							})}
+						</div>
 					</div>
 				</div>
 				<div className='absolute -top-[80px] right-[24%]'>

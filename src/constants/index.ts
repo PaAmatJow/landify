@@ -31,8 +31,9 @@ export const SERVICES = [
 
 export const FAQ = [
   {id:1, question: 'Will I get lifetime updates?', answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat libero? Sunt sed enim atque rerum mollitia ut dicta est!'},
-  {id:2, question: `Can I use Landify for a client's product?`, answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat libero? Sunt sed enim atque rerum mollitia ut dicta est!'},
-  {id:3, question: 'Does Landify procide code kit as well?', answer: 'Landify is a landing page UI kit like Figma. The kit consists of 170+ blocks from 15 categories with ready-to-use sample pages. Also, it comes with blocks for desktop, tablet and mobile layouts.'},
+	{id:2, question: 'Does Landify procide code kit as well?', answer: 'Landify is a landing page UI kit like Figma. The kit consists of 170+ blocks from 15 categories with ready-to-use sample pages. Also, it comes with blocks for desktop, tablet and mobile layouts.'},
+  {id:3, question: `Can I use Landify for a client's product?`, answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat libero? Sunt sed enim atque rerum mollitia ut dicta est!'},
+  
   {id:4, question: 'Do you have a free trial of landify?', answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat libero? Sunt sed enim atque rerum mollitia ut dicta est!'},
   {id:5, question: 'Will I get lifetime updates?', answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat libero? Sunt sed enim atque rerum mollitia ut dicta est!'},
   {id:6, question: 'Does Landify procide code kit as well?', answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat libero? Sunt sed enim atque rerum mollitia ut dicta est!'},
