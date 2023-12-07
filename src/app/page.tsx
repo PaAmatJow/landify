@@ -22,6 +22,8 @@ import TriangleDark from '@/components/svgs/TriangleDark';
 import TriangleGreen from '@/components/svgs/TriangleGreen';
 import SquareDark from '@/components/svgs/SquareDark';
 import type { Metadata } from 'next';
+import TriangleLine from '@/components/svgs/TriangleLine';
+import TrianglePink from '@/components/svgs/TrianglePink';
 
 export const metadata: Metadata = {
 	title: 'Landify',
@@ -72,7 +74,7 @@ export default function Home() {
 				</div>
 				{/* end of mobile hero */}
 
-				<div className='absolute right-0 top-[20px] hidden h-[calc(100vh-120px)] w-[26%] items-center bg-dark md:flex'>
+				<div className='absolute right-0 top-[20px] hidden h-[calc(100vh-120px)] w-[26%] items-center bg-[#1B1A20] md:flex'>
 					<div className='absolute -left-[165px]'>
 						<div className='relative h-[320px] w-[320px]'>
 							<Image
@@ -89,9 +91,12 @@ export default function Home() {
 								</div>
 							</div>
 
-							<div className='absolute -right-8 top-[57%] rounded-xl bg-white px-5 py-1.5 text-center text-dark'>
+							<div className='absolute -right-8 top-[57%] rounded-xl bg-white px-5 py-1.5 text-center text-dark z-20'>
 								<h1 className='mb-[-10px] text-[40px] font-bold'>40%</h1>
 								<p className='text-[14px] text-gray-500'>Market</p>
+								<div className="absolute top-[-40px] right-[-50px] z-20">
+									<TrianglePink />
+								</div>
 							</div>
 
 							<div className='absolute -left-6 bottom-[6%] flex items-center gap-[5px] rounded-md bg-white px-2 py-3  text-dark shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
@@ -107,6 +112,9 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
+					</div>
+					<div className="absolute top-[0] left-[5px]">
+						<TriangleLine />
 					</div>
 				</div>
 				<div className='flex h-[calc(100vh-100px)] flex-col justify-center px-[20px] lg:px-[80px]'>
