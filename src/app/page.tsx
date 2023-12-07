@@ -81,6 +81,7 @@ export default function Home() {
 								src='/images/heroGirl.jpg'
 								alt='girl'
 								fill={true}
+								priority={true}
 								className='hidden rounded-full object-cover shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] md:flex'
 							/>
 							<div className='absolute -left-7 top-0 rounded-xl bg-dark px-5 py-2 text-center text-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
