@@ -44,7 +44,7 @@ const Accordion = ({ question, answer }: FAQProps) => {
 								},
 							}}
 							exit={{ opacity: 0 }}
-							className='text-[14px] text-gray-500 '
+							className='text-[14px] text-gray-500 lg:text-[16px] '
 						>
 							{answer}
 						</motion.p>

@@ -14,14 +14,16 @@ const Footer = () => {
 							width={40}
 							height={40}
 						/>
-						<h3 className='text-[16px] font-bold'>Landify&#8482;</h3>
+						<h3 className='text-[16px] lg:text-[18px] font-bold'>
+							Landify&#8482;
+						</h3>
 					</Link>
 				</div>
 
 				<div className='flex gap-[100px]'>
 					<div className='flex flex-col gap-[20px]'>
-						<h3 className='body-semibold'>Menu</h3>
-						<div className='flex flex-col gap-[10px] text-[12px] font-medium text-gray-500'>
+						<h3 className='body-semibold lg:text-[16px]'>Menu</h3>
+						<div className='flex flex-col gap-[10px] text-[12px] lg:text-[14px] font-normal tracking-wide text-gray-500'>
 							<Link href='/' className=''>
 								Services
 							</Link>
@@ -37,8 +39,8 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className='flex flex-col gap-[20px]'>
-						<h3 className='body-semibold'>Connect</h3>
-						<div className='flex flex-col gap-[10px] text-[12px] font-medium text-gray-500'>
+						<h3 className='body-semibold lg:text-[16px]'>Connect</h3>
+						<div className='flex flex-col gap-[10px] text-[12px] lg:text-[14px] font-normal text-gray-500'>
 							<Link href='/' className=''>
 								LinkedIn
 							</Link>
@@ -57,7 +59,11 @@ const Footer = () => {
 			</div>
 
 			<div className='flex flex-1 flex-col gap-[10px] max-lg:mb-[20px] w-1/2 max-md:w-full'>
-				<h3 className='body-semibold'>Subscribe to our newsletter</h3>
+				<h3
+					className='body-semibold lg:text-[16px]'
+				>
+					Subscribe to our newsletter
+				</h3>
 				<form className='flex items-center gap-[10px]'>
 					<input
 						type='text'

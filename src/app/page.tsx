@@ -31,12 +31,12 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-	const faqOne = FAQ.slice(0,3)
-	const faqTwo = FAQ.slice(3)
+	const faqOne = FAQ.slice(0, 3);
+	const faqTwo = FAQ.slice(3);
 	return (
 		<main className='overflow-hidden'>
 			{/* Hero section */}
-			<div className='relative min-h-[calc(100vh-100px)] w-full bg-light'>
+			<div className='relative min-h-[calc(100vh-80px)] w-full bg-light'>
 				{/* mobile hero */}
 				<div className='absolute right-[50px] top-[50px] rounded-xl bg-dark px-3 py-1 text-center text-white md:-left-7 md:top-0 md:hidden md:px-5 md:py-2'>
 					<h1 className='mb-[-10px] text-[30px] font-extrabold md:text-[40px]'>
@@ -76,7 +76,7 @@ export default function Home() {
 				</div>
 				{/* end of mobile hero */}
 
-				<div className='absolute right-0 top-[20px] hidden h-[calc(100vh-120px)] w-[26%] items-center bg-[#1B1A20] md:flex'>
+				<div className='absolute right-0 top-[20px] hidden h-[calc(100vh-100px)] w-[26%] items-center bg-[#1B1A20] md:flex'>
 					<div className='absolute -left-[165px]'>
 						<div className='relative h-[320px] w-[320px]'>
 							<Image
@@ -125,7 +125,7 @@ export default function Home() {
 						<h1 className='text-[48px] font-extrabold leading-[44px] sm:text-[60px] sm:leading-[56px] md:text-[66px] md:leading-[70px] lg:text-[70px]'>
 							Academy <br /> of Your Business
 						</h1>
-						<p className='mb-[10px] max-w-[90%] text-[18px] text-gray-500'>
+						<p className='mb-[10px] max-w-[90%] text-[18px] lg:text-[18.5px] text-gray-500'>
 							Organizes work so teams know what to do, why it matters, and how
 							to get it done.
 						</p>
@@ -135,7 +135,9 @@ export default function Home() {
 								<button className=''>
 									<IoMdPlayCircle className='text-[40px]' />
 								</button>
-								<p className='text-[14px] font-bold'>View Demo</p>
+								<p className='text-[14px] lg:text-[16px] font-semibold'>
+									View Demo
+								</p>
 							</Link>
 						</div>
 					</div>
@@ -154,39 +156,39 @@ export default function Home() {
 					</div>
 
 					<div className='flex flex-wrap justify-center gap-[30px] md:flex-row'>
-						<div className='flex w-[10rem] flex-col items-center justify-center gap-[10px] text-center'>
+						<div className='flex w-[10rem] lg:w-[12rem] flex-col items-center justify-center gap-[10px] text-center'>
 							<div className='rounded-full bg-lime p-3'>
 								<TbArticleFilledFilled />
 							</div>
 							<h3 className='text-[20px]'>Business idea</h3>
-							<p className='max-w-[9.5rem] text-[14px] text-gray-500'>
+							<p className='max-w-[9.5rem] lg:max-w-[11rem] text-[14px] lg:text-[16px] text-gray-500'>
 								What you want your business to be.
 							</p>
 						</div>
-						<div className='flex w-[10rem] flex-col items-center justify-center gap-[10px] text-center lg:mt-[60px]'>
+						<div className='flex w-[10rem] lg:w-[12rem] flex-col items-center justify-center gap-[10px] text-center lg:mt-[60px]'>
 							<div className='rounded-full bg-sun p-3'>
 								<GoClockFill className='' />
 							</div>
 							<h3 className='text-[20px]'>Planning</h3>
-							<p className='max-w-[9.5rem] text-[14px] text-gray-500'>
+							<p className='max-w-[9.5rem] lg:max-w-[11rem] text-[14px] lg:text-[16px] text-gray-500'>
 								A business plan helps formalize your idea.
 							</p>
 						</div>
-						<div className='flex w-[10rem] flex-col items-center justify-center gap-[10px] text-center'>
+						<div className='flex w-[10rem] lg:w-[12rem] flex-col items-center justify-center gap-[10px] text-center'>
 							<div className='rounded-full bg-Pink p-3'>
 								<IoSettingsSharp />
 							</div>
 							<h3 className='text-[20px]'>Develop</h3>
-							<p className='max-w-[9.5rem] text-[14px] text-gray-500'>
+							<p className='max-w-[9.5rem] lg:max-w-[11rem] text-[14px] lg:text-[16px] text-gray-500'>
 								Ideation, prototyping, costing of your product.
 							</p>
 						</div>
-						<div className='flex w-[10rem] flex-col items-center justify-center gap-[10px] text-center lg:mt-[60px]'>
+						<div className='flex w-[10rem] lg:w-[12rem] flex-col items-center justify-center gap-[10px] text-center lg:mt-[60px]'>
 							<div className='rounded-full bg-gray-200 p-3'>
 								<BiSolidBarChartSquare />
 							</div>
 							<h3 className='text-[20px]'>Business structure</h3>
-							<p className='max-w-[9.5rem] text-[14px] text-gray-500'>
+							<p className='max-w-[9.5rem] lg:max-w-[11rem] text-[14px] lg:text-[16px] text-gray-500'>
 								Key parts of your business.
 							</p>
 						</div>
@@ -196,7 +198,7 @@ export default function Home() {
 						<div className='relative flex justify-start rounded-xl bg-dark px-8 py-7 md:justify-end lg:w-full'>
 							<div className='flex w-full flex-col gap-[20px] md:w-1/2 lg:w-[27rem]'>
 								<h3 className='text-[36px] text-white'>Our Story</h3>
-								<p className='text-gray-500'>
+								<p className='text-gray-500 lg:text-[16px] font-normal'>
 									We specialize in organizing professional training courses and
 									we have been doing it in Poland since 1994. As a academy of
 									business, we are going through the development cycle.
