@@ -16,7 +16,7 @@ const MobileNav = () => {
 		<div className='bg-none text-inherit'>
 			<Sheet>
 				<SheetTrigger asChild>
-					<RxHamburgerMenu className='text-[20px]' />
+					<RxHamburgerMenu className='text-[20px] cursor-pointer' />
 				</SheetTrigger>
 				<SheetContent side='left' className='bg-white'>
 					<Link href='/' className='flex items-center gap-[2px]'>

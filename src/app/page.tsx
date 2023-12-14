@@ -36,7 +36,7 @@ export default function Home() {
 	return (
 		<main className='overflow-hidden'>
 			{/* Hero section */}
-			<div className='relative min-h-[calc(100vh-80px)] w-full bg-light'>
+			<div className='relative top-[80px] min-h-[calc(100vh-80px)] w-full bg-light'>
 				{/* mobile hero */}
 				<div className='absolute right-[50px] top-[50px] rounded-xl bg-dark px-3 py-1 text-center text-white md:-left-7 md:top-0 md:hidden md:px-5 md:py-2'>
 					<h1 className='mb-[-10px] text-[30px] font-extrabold md:text-[40px]'>
@@ -145,7 +145,7 @@ export default function Home() {
 			</div>
 			{/* End of Hero section */}
 			{/* services section 1 */}
-			<div className='mb-[150px] mt-[70px] bg-white px-[20px] lg:px-[120px]'>
+			<div className='my-[150px] bg-white px-[20px] lg:px-[120px]'>
 				<div className=''>
 					<div className='mb-[30px] text-center'>
 						<h1 className='text-[38px]'>The process we follow</h1>
