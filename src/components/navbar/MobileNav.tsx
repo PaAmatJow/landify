@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import { RxHamburgerMenu } from "react-icons/rx";
-import Button from "../button/Button";
-import { FaChevronDown } from "react-icons/fa6";
+import Image from 'next/image';
+import Link from 'next/link';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import Button from '../button/Button';
+import { FaChevronDown } from 'react-icons/fa6';
 import {
 	Sheet,
 	SheetContent,
@@ -10,13 +10,12 @@ import {
 	SheetTrigger,
 } from '@/components/ui/sheet';
 
-
 const MobileNav = () => {
-  return (
+	return (
 		<div className='bg-none text-inherit'>
 			<Sheet>
 				<SheetTrigger asChild>
-					<RxHamburgerMenu className='text-[20px] cursor-pointer' />
+					<RxHamburgerMenu className='cursor-pointer text-[20px]' />
 				</SheetTrigger>
 				<SheetContent side='left' className='bg-white'>
 					<Link href='/' className='flex items-center gap-[2px]'>
@@ -30,7 +29,7 @@ const MobileNav = () => {
 					</Link>
 					<div>
 						<SheetClose asChild>
-							<div className='w-full flex flex-col gap-[40px] mt-[50px]'>
+							<div className='mt-[50px] flex w-full flex-col gap-[40px]'>
 								<div className='flex flex-col gap-[20px] text-[14px] font-semibold text-gray-500'>
 									<Link
 										href='/'
@@ -68,5 +67,5 @@ const MobileNav = () => {
 			</Sheet>
 		</div>
 	);
-}
-export default MobileNav
+};
+export default MobileNav;

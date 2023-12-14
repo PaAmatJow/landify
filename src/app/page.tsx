@@ -48,7 +48,7 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className='absolute bottom-[20%] right-[50px] rounded-xl bg-white px-5 py-1.5 text-center text-dark md:-right-8 md:top-[57%] md:hidden'>
+				<div className='absolute bottom-[20%] right-[50px] rounded-xl bg-white px-5 py-1.5 text-center text-dark shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] md:-right-8 md:top-[57%] md:hidden'>
 					<h1 className='mb-[-10px] text-[30px] font-bold md:text-[40px]'>
 						40%
 					</h1>

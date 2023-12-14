@@ -21,7 +21,7 @@ const Navbar = () => {
 				},
 				{
 					opacity: 1,
-					duration: 0.5,
+					duration: 0.1,
 				}
 			)
 			.progress(1);
@@ -36,7 +36,7 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={navbarRef}
-			className='transitiion-all fixed left-0 top-0 z-50 flex h-[80px] w-full items-center justify-between bg-white px-[20px] shadow-sm duration-200 md:justify-around lg:justify-between lg:px-[80px]'
+			className='transitiion-all fixed left-0 top-0 z-50 flex h-[80px] w-full items-center justify-between bg-white px-[20px] shadow-sm duration-100 md:justify-around lg:justify-between lg:px-[80px]'
 		>
 			<Link href='/' className='flex items-center gap-[2px]'>
 				<Image src='/images/landify.png' alt='logo' width={40} height={40} />
