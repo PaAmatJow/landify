@@ -8,6 +8,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import { usePathname } from 'next/navigation';
 import SplashScreen from '@/components/splashScreen/SplashScreen';
+import SmoothScroll from '@/components/smoothScroll/SmoothScroll';
 
 
 const Grold = localFont({
@@ -27,12 +28,17 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={Grold.className}>
-				{isLoading && isHome ? (<SplashScreen finishLoading={() => setIsLoading(false)} />) : (<div className='mx-auto max-w-[1366px] overflow-hidden'>
-					<Navbar />
-					{children}
-					<Footer />
-				</div>)}
-				
+				{isLoading && isHome ? (
+					<SplashScreen finishLoading={() => setIsLoading(false)} />
+				) : (
+					<div className='mx-auto max-w-[1366px] overflow-hidden'>
+						<SmoothScroll>
+							<Navbar />
+							{children}
+							<Footer />
+						</SmoothScroll>
+					</div>
+				)}
 			</body>
 		</html>
 	);

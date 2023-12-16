@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
+    "@studio-freight/lenis": "^1.0.29",
+    "@studio-freight/react-lenis": "^0.0.38",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "eslint-config-prettier": "^9.0.0",
