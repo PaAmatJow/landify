@@ -33,6 +33,7 @@ const Navbar = () => {
 			},
 		});
 	}, []);
+	
 	return (
 		<nav
 			ref={navbarRef}

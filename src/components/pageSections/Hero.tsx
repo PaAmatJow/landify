@@ -77,7 +77,7 @@ const Hero = () => {
 							</div>
 						</div>
 
-						<div className='absolute -left-6 bottom-[6%] flex items-center gap-[5px] rounded-md bg-white px-2 py-3  text-dark shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
+						<div className='absolute -left-6 bottom-[6%] flex items-center gap-[5px] rounded-md bg-white px-5 py-2.5  text-dark shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
 							<Image
 								src='/images/smallHeroImg.webp'
 								alt=''
