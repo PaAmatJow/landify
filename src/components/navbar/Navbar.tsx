@@ -33,11 +33,11 @@ const Navbar = () => {
 			},
 		});
 	}, []);
-	
+
 	return (
 		<nav
 			ref={navbarRef}
-			className='transitiion-all fixed left-0 top-0 z-50 flex h-[80px] w-full items-center justify-between bg-white px-[20px] shadow-sm duration-100 md:justify-around lg:justify-between lg:px-[80px]'
+			className='fixed left-0 top-0 z-50 flex h-[80px] w-full items-center justify-between bg-white px-[20px] shadow-sm transition-all duration-100 md:justify-around lg:justify-between lg:px-[80px]'
 		>
 			<Link href='/' className='flex items-center gap-[2px]'>
 				<Image src='/images/landify.png' alt='logo' width={40} height={40} />
@@ -46,16 +46,28 @@ const Navbar = () => {
 
 			<div className='hidden w-[50%] items-center justify-between gap-[40px] md:flex lg:justify-around'>
 				<div className='flex items-center gap-[20px] text-[14px] font-medium text-gray-500 lg:text-[16px]'>
-					<Link href='/' className='flex items-center gap-[5px]'>
+					<Link
+						href='/'
+						className='flex items-center gap-[5px] transition-all duration-100 hover:scale-105 hover:text-black'
+					>
 						Product <FaChevronDown className='text-[12px]' />
 					</Link>
-					<Link href='/' className='flex items-center gap-[5px]'>
+					<Link
+						href='/'
+						className='flex items-center gap-[5px] transition-all duration-100 hover:scale-105 hover:text-black'
+					>
 						Solutions <FaChevronDown className='text-[12px]' />
 					</Link>
-					<Link href='/' className='flex items-center gap-[5px]'>
+					<Link
+						href='/'
+						className='flex items-center gap-[5px] transition-all duration-100 hover:scale-105 hover:text-black'
+					>
 						Resources <FaChevronDown className='text-[12px]' />
 					</Link>
-					<Link href='/' className=''>
+					<Link
+						href='/'
+						className='transition-all duration-100 hover:scale-105 hover:text-black'
+					>
 						Pricing
 					</Link>
 				</div>

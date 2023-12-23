@@ -24,16 +24,28 @@ const Footer = () => {
 					<div className='flex flex-col gap-[20px]'>
 						<h3 className='body-semibold lg:text-[16px]'>Menu</h3>
 						<div className='flex flex-col gap-[10px] text-[12px] lg:text-[14px] font-normal tracking-wide text-gray-500'>
-							<Link href='/' className=''>
+							<Link
+								href='/'
+								className=' transition-all duration-100 hover:scale-105 hover:text-white'
+							>
 								Services
 							</Link>
-							<Link href='/' className=''>
+							<Link
+								href='/'
+								className=' transition-all duration-100 hover:scale-105 hover:text-white'
+							>
 								Works
 							</Link>
-							<Link href='/' className=''>
+							<Link
+								href='/'
+								className=' transition-all duration-100 hover:scale-105 hover:text-white'
+							>
 								About
 							</Link>
-							<Link href='/' className=''>
+							<Link
+								href='/'
+								className=' transition-all duration-100 hover:scale-105 hover:text-white'
+							>
 								Contact
 							</Link>
 						</div>
@@ -41,16 +53,28 @@ const Footer = () => {
 					<div className='flex flex-col gap-[20px]'>
 						<h3 className='body-semibold lg:text-[16px]'>Connect</h3>
 						<div className='flex flex-col gap-[10px] text-[12px] lg:text-[14px] font-normal text-gray-500'>
-							<Link href='/' className=''>
+							<Link
+								href='/'
+								className=' transition-all duration-100 hover:scale-105 hover:text-white'
+							>
 								LinkedIn
 							</Link>
-							<Link href='/' className=''>
+							<Link
+								href='/'
+								className=' transition-all duration-100 hover:scale-105 hover:text-white'
+							>
 								Facebook
 							</Link>
-							<Link href='/' className=''>
+							<Link
+								href='/'
+								className=' transition-all duration-100 hover:scale-105 hover:text-white'
+							>
 								Twitter
 							</Link>
-							<Link href='/' className=''>
+							<Link
+								href='/'
+								className=' transition-all duration-100 hover:scale-105 hover:text-white'
+							>
 								Instagram
 							</Link>
 						</div>
@@ -59,15 +83,13 @@ const Footer = () => {
 			</div>
 
 			<div className='flex flex-1 flex-col gap-[10px] max-lg:mb-[20px] w-1/2 max-md:w-full'>
-				<h3
-					className='body-semibold lg:text-[16px]'
-				>
+				<h3 className='body-semibold lg:text-[16px]'>
 					Subscribe to our newsletter
 				</h3>
 				<form className='flex items-center gap-[10px]'>
 					<input
 						type='text'
-						className='flex-1 rounded-xl border-none bg-white px-4 py-3 placeholder:text-gray-500'
+						className='flex-1 rounded-xl border-none bg-white px-4 py-3 placeholder:text-gray-500 focus:outline-none focus-visible:ring'
 						placeholder='Your email'
 					/>
 					<Button name='Subscribe' url='/' variant='bg-[#FFB3A6] text-dark' />
