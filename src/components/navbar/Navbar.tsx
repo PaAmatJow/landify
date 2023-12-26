@@ -37,7 +37,7 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={navbarRef}
-			className='fixed left-0 top-0 z-50 flex h-[80px] w-full items-center justify-between bg-white px-[20px] shadow-sm transition-all duration-100 md:justify-around lg:justify-between lg:px-[80px]'
+			className='fixed top-0 z-50 flex h-[80px] w-full max-w-[1366px] mx-auto items-center justify-between bg-white px-[20px] shadow-sm transition-all duration-100 md:justify-around lg:justify-between lg:px-[80px]'
 		>
 			<Link href='/' className='flex items-center gap-[2px]'>
 				<Image src='/images/landify.png' alt='logo' width={40} height={40} />
