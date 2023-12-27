@@ -27,7 +27,7 @@ export default function RootLayout({
 
 	return (
 		<html lang='en'>
-			<body className={Grold.className}>
+			<body className={`${Grold.className} overflow-hidden`}>
 				{isLoading && isHome ? (
 					<SplashScreen finishLoading={() => setIsLoading(false)} />
 				) : (
