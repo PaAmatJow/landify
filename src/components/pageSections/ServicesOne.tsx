@@ -10,7 +10,7 @@ import TriangleSun from '@/components/svgs/TriangleSun';
 
 const ServicesOne = () => {
 	return (
-		<div className='my-[150px] bg-white px-[20px] lg:px-[120px]'>
+		<div className='my-[150px] max-w-[1366px] mx-auto bg-white px-[20px] lg:px-[120px]'>
 			<div className=''>
 				<div className='mb-[30px] text-center'>
 					<h1 className='text-[38px]'>The process we follow</h1>

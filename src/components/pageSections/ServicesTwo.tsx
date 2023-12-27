@@ -6,7 +6,7 @@ import TriangleDark from '@/components/svgs/TriangleDark';
 
 const ServicesTwo = () => {
 	return (
-		<div className='relative px-[20px] lg:px-[120px]'>
+		<div className='relative max-w-[1366px] mx-auto px-[20px] lg:px-[120px]'>
 			<div className='relative mb-[30px] text-center'>
 				<h1 className='text-[38px]'>Services we provide</h1>
 				<p className=' mx-auto max-w-[22rem] text-gray-500'>

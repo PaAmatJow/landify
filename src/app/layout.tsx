@@ -31,7 +31,7 @@ export default function RootLayout({
 				{isLoading && isHome ? (
 					<SplashScreen finishLoading={() => setIsLoading(false)} />
 				) : (
-					<div className='mx-auto max-w-[1366px] overflow-hidden'>
+					<div className='mx-auto w-[100vw] overflow-hidden'>
 						<SmoothScroll>
 							<Navbar />
 							{children}

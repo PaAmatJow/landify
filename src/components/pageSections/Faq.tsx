@@ -10,7 +10,7 @@ const Faq = () => {
 	const faqTwo = FAQ.slice(3);
 
 	return (
-		<div className='relative my-[100px] px-[20px] lg:px-[120px]'>
+		<div className='relative max-w-[1366px] mx-auto my-[100px] px-[20px] lg:px-[120px]'>
 			<div className='px-8'>
 				<div className='relative mb-[20px]'>
 					<h1 className='text-[38px]'>Frequently Asked Questions</h1>
