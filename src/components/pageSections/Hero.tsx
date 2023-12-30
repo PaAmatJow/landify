@@ -86,7 +86,7 @@ const Hero = () => {
 									alt=''
 									width={40}
 									height={40}
-									className='rounded-full object-cover'
+									className='w-[40px] h-[40px] rounded-full object-cover'
 								/>
 								<p className='text-[12px] font-semibold'>
 									Bring your ideas to life
